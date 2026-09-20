@@ -1,0 +1,360 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Postings of the Republic — 任免之譜 (1912–1945)</title>
+<style>
+:root{--ink:#0a110c;--ink2:#0c140f;--panel:#101b14;--line:#23402f66;--paper:#eaf2ec;--muted:#8fa89a;
+ --jade:#4fb08a;--jade2:#2e7d5f;--bronze:#c99a5e;--bronze2:#9a713a;--parch:#d9e6db;--sea:#060b08}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ink);color:var(--paper);
+ font-family:-apple-system,'Segoe UI',Roboto,'Helvetica Neue','PingFang TC','PingFang SC','Microsoft YaHei',sans-serif;
+ line-height:1.6;font-size:15px}
+.serif{font-family:Georgia,'Times New Roman','Songti TC','Songti SC','Noto Serif CJK TC','SimSun',serif}
+.mono{font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace;text-transform:uppercase;letter-spacing:.22em;font-size:10.5px;color:var(--jade)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 26px}
+a{color:var(--bronze)}
+::selection{background:#2e7d5f66}
+
+#nav{position:fixed;top:0;left:0;right:0;z-index:1200;display:flex;align-items:center;gap:22px;
+ padding:10px 26px;background:#0a110ce6;backdrop-filter:blur(8px);border-bottom:1px solid var(--line);
+ transform:translateY(-100%);transition:transform .3s}
+#nav.show{transform:none}
+#nav .brand{font-weight:700;font-size:13.5px;color:var(--paper);text-decoration:none;letter-spacing:.02em}
+#nav .brand b{color:var(--jade);font-weight:700}
+#nav .lnks{margin-left:auto;display:flex;gap:18px}
+#nav .lnks a{color:var(--muted);text-decoration:none;font-size:12.5px;letter-spacing:.04em}
+#nav .lnks a:hover{color:var(--paper)}
+
+.hero{position:relative;padding:96px 0 64px;border-bottom:1px solid var(--line);overflow:hidden;
+ background:radial-gradient(1100px 500px at 78% -12%, #14301faa, transparent 65%),
+            radial-gradient(700px 380px at -8% 108%, #0f2417aa, transparent 60%), var(--ink)}
+.hero .grid2{display:grid;grid-template-columns:minmax(0,1fr) 210px;gap:30px;align-items:start}
+.hero h1{font-size:clamp(38px,6.2vw,72px);line-height:1.03;margin:.32em 0 .18em;font-weight:400;letter-spacing:.005em}
+.hero h1 em{font-style:italic;color:var(--bronze)}
+.hero .sub{color:var(--muted);font-size:16.5px;max-width:620px;margin:0}
+.counts{display:flex;flex-wrap:wrap;gap:10px 0;margin:44px 0 8px;border-left:1px solid var(--line)}
+.counts .c{padding:2px 22px 2px 15px;border-right:1px solid var(--line)}
+.counts .c b{display:block;font-size:clamp(22px,3vw,31px);font-weight:400;color:var(--paper);font-variant-numeric:tabular-nums;font-family:Georgia,'Times New Roman',serif}
+.counts .c span{font-size:10px;color:var(--muted);letter-spacing:.05em;text-transform:uppercase}
+.scrolldn{display:inline-block;margin-top:30px;color:var(--paper);text-decoration:none;font-size:13px;
+ border:1px solid #2f523e;padding:9px 18px;border-radius:22px;letter-spacing:.03em;transition:all .2s}
+.scrolldn:hover{background:var(--jade2);border-color:var(--jade2);color:#fff}
+.ornament{display:flex;flex-direction:row-reverse;gap:16px;justify-content:flex-start;align-items:flex-start;padding-top:8px}
+.vtext{writing-mode:vertical-rl;font-size:26px;letter-spacing:.34em;color:#557a64;line-height:1.25;font-family:Georgia,'Songti TC','Songti SC','SimSun',serif}
+.vtext small{font-size:13px;color:#40614d;letter-spacing:.4em}
+.seal{writing-mode:vertical-rl;background:linear-gradient(160deg,#2e7d5f,#256b50);color:#eef8f1;border-radius:6px;padding:12px 9px;
+ font-size:21px;letter-spacing:.28em;line-height:1.3;box-shadow:0 0 0 1px #00000055, 0 6px 24px #2e7d5f33;
+ font-family:Georgia,'Songti TC','Songti SC','SimSun',serif}
+.badge10{display:inline-block;margin-top:18px;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;
+ color:var(--bronze);border:1px dashed #6b543a;border-radius:14px;padding:3px 12px}
+@media(max-width:760px){.hero .grid2{grid-template-columns:1fr}.ornament{display:none}}
+
+section{padding:72px 0;border-bottom:1px solid var(--line)}
+.shead{display:flex;align-items:baseline;gap:16px}
+.shead .no{font-family:Georgia,serif;font-size:15px;color:#6f9c82;font-style:italic}
+h2{font-size:clamp(26px,3.4vw,38px);font-weight:400;margin:.25em 0 .15em;letter-spacing:.005em}
+.lead{color:var(--muted);max-width:720px;margin:.5em 0 0;font-size:15px}
+.lead em{color:var(--parch)}
+.rv{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+
+/* pulse */
+.panelbox{margin-top:32px;background:linear-gradient(170deg,#12211a,#0e1a13);border:1px solid #23402f80;border-radius:12px;padding:22px 20px 16px}
+#eralabels{display:flex;margin:0 4px 6px;font-size:10.5px;letter-spacing:.1em;color:#79a58c;text-transform:uppercase}
+#eralabels span{border-left:1px solid #2f523e;padding:0 0 2px 8px}
+#pulse{display:flex;align-items:flex-end;gap:3px;height:250px;padding:0 4px}
+.pcol{flex:1;display:flex;flex-direction:column;justify-content:flex-end;height:100%;cursor:crosshair;position:relative;border-radius:3px 3px 0 0}
+.pcol .stk{display:flex;flex-direction:column-reverse;border-radius:3px 3px 0 0;overflow:hidden}
+.pcol .ren{background:linear-gradient(180deg,#5fbd97,#2e7d5f)}
+.pcol .mian{background:linear-gradient(180deg,#d9ad72,#9a713a)}
+.pcol:hover .ren{filter:brightness(1.2)}
+.pcol:hover .mian{filter:brightness(1.2)}
+.pcol.e1{background:#4fb08a08}.pcol.e2{background:#c99a5e0a}
+#readout{display:flex;gap:22px;flex-wrap:wrap;padding:14px 4px 2px;font-size:12.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+#readout b{color:var(--paper);font-weight:400;font-family:Georgia,serif;font-size:15px}
+#readout .rj{color:var(--jade)}#readout .rb{color:var(--bronze)}
+.axis{display:flex;justify-content:space-between;padding:4px 4px 0;font-size:10px;color:#557a64}
+.pnote{display:flex;gap:20px;flex-wrap:wrap;font-size:12px;color:var(--muted);padding:12px 4px 2px}
+.pnote i{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:7px;vertical-align:-1px}
+
+/* province + post bars */
+.bars{margin-top:32px}
+.bar{display:grid;grid-template-columns:170px 1fr 110px;gap:14px;align-items:center;margin:7px 0;font-size:13px}
+.bar .lb{color:var(--paper);text-align:right;font-size:13px}
+.bar .lb small{display:block;color:#557a64;font-size:10.5px;letter-spacing:.06em}
+.bar .tk{background:#1a2b20;border-radius:5px;height:18px;overflow:hidden}
+.bar .tk>i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--jade),var(--jade2));transition:width 1s cubic-bezier(.2,.7,.3,1)}
+.bar.sp .tk>i{background:linear-gradient(90deg,var(--bronze),var(--bronze2))}
+.bar .vv{color:var(--muted);font-variant-numeric:tabular-nums;font-size:12px}
+.bar:hover .tk>i{filter:brightness(1.18)}
+
+/* era fingerprints */
+.fps{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:32px}
+.fp{background:linear-gradient(170deg,#12211a,#0e1a13);border:1px solid #23402f80;border-radius:12px;padding:20px 19px 16px;position:relative;overflow:hidden}
+.fp .bigzh{position:absolute;right:-6px;top:-18px;font-size:96px;color:#ffffff08;font-family:Georgia,'Songti TC','SimSun',serif;pointer-events:none}
+.fp h3{margin:0;font-size:24px;font-weight:400;font-family:Georgia,'Songti TC','Songti SC','SimSun',serif}
+.fp .yrs{color:var(--bronze);font-size:11.5px;letter-spacing:.1em;margin:1px 0 3px;font-family:Georgia,serif;font-style:italic}
+.fp .fn{color:var(--muted);font-size:12px;margin-bottom:13px}
+.fp .row{display:grid;grid-template-columns:96px 1fr 40px;gap:9px;align-items:center;margin:6px 0;font-size:12px}
+.fp .row .t{color:var(--paper)}
+.fp .row .k{background:#1a2b20;border-radius:4px;height:11px;overflow:hidden}
+.fp .row .k>i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--bronze),var(--bronze2));transition:width .9s ease}
+.fp .row.j .k>i{background:linear-gradient(90deg,var(--jade),var(--jade2))}
+.fp .row .p{color:var(--muted);text-align:right;font-variant-numeric:tabular-nums}
+
+/* churn blocks */
+.nov{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:32px}
+.nv{background:linear-gradient(170deg,#12211a,#0e1a13);border:1px solid #23402f80;border-radius:12px;padding:20px 19px;position:relative;overflow:hidden}
+.nv .bigzh{position:absolute;right:-6px;top:-18px;font-size:96px;color:#ffffff08;font-family:Georgia,'Songti TC','SimSun',serif;pointer-events:none}
+.nv b{display:block;font-size:38px;font-weight:400;color:var(--paper);font-family:Georgia,serif;font-variant-numeric:tabular-nums}
+.nv .t{color:var(--jade);font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px}
+.nv p{color:var(--muted);font-size:12.5px;margin:8px 0 0;line-height:1.55}
+
+footer{padding:46px 0 64px;color:var(--muted);font-size:12.5px}
+footer b{color:var(--paper)}
+.note{background:#0e1a13;border:1px solid #23402f80;border-left:3px solid var(--jade2);padding:13px 16px;border-radius:8px;margin-top:18px;font-size:12.5px;color:var(--muted)}
+.note b{color:var(--parch)}
+</style></head><body>
+
+<div id="cover">
+<style>
+#cover{position:fixed;inset:0;z-index:2000;background:
+ radial-gradient(900px 420px at 80% -10%, #14301faa, transparent 65%), #0a110c;
+ display:flex;align-items:center;justify-content:center;font-family:-apple-system,'Segoe UI',Roboto,'PingFang TC','Microsoft YaHei',sans-serif}
+#cover .cd{display:flex;gap:26px;align-items:center;max-width:860px;padding:20px 30px;margin:0 14px;
+ border:1px solid #23402f;border-radius:14px;background:linear-gradient(170deg,#12211a,#0e1a13);
+ box-shadow:0 16px 44px #00000059;transition:transform .25s,border-color .25s,box-shadow .25s;cursor:pointer}
+#cover .cd:hover{transform:translateY(-4px) scale(1.012);border-color:#3a5c48;box-shadow:0 24px 60px #00000080}
+#cover .seal2{writing-mode:vertical-rl;background:linear-gradient(160deg,#2e7d5f,#256b50);color:#eef8f1;border-radius:6px;padding:11px 8px;
+ font-size:19px;letter-spacing:.26em;line-height:1.3;font-family:Georgia,'Songti TC','SimSun',serif;flex:none;
+ box-shadow:0 0 0 1px #00000055,0 6px 22px #2e7d5f33}
+#cover .mono2{font-family:ui-monospace,Menlo,monospace;text-transform:uppercase;letter-spacing:.2em;font-size:10px;color:#4fb08a}
+#cover h1{font-family:Georgia,'Times New Roman','Songti TC','SimSun',serif;font-weight:400;color:#eaf2ec;
+ font-size:clamp(21px,3.4vw,30px);line-height:1.12;margin:.25em 0 .3em}
+#cover h1 em{font-style:italic;color:#c99a5e}
+#cover p{color:#8fa89a;font-size:13.5px;line-height:1.55;margin:0 0 14px;max-width:54ch}
+#cover .st{color:#6a8f7a;font-size:11px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:16px}
+#cover .st b{color:#eaf2ec;font-weight:400;font-family:Georgia,serif;font-size:14px}
+#cover .btns{display:flex;gap:12px;flex-wrap:wrap}
+#cover .go{background:#2e7d5f;color:#fff;border:0;border-radius:20px;padding:9px 20px;font-size:13.5px;cursor:pointer;letter-spacing:.02em}
+#cover .cd:hover .go{filter:brightness(1.12)}
+#cover a.nt{color:#8fa89a;font-size:12.5px;align-self:center;text-decoration:none;border-bottom:1px dotted #3a5c48}
+#cover a.nt:hover{color:#eaf2ec}
+@media(max-width:640px){#cover .cd{flex-direction:column;gap:14px;text-align:center}#cover .seal2{writing-mode:horizontal-tb;letter-spacing:.3em}#cover .btns{justify-content:center}}
+</style>
+<div class="cd" id="cvcard">
+ <div class="seal2">任免之譜</div>
+ <div>
+  <div class="mono2">政府公報 · 人事任免 · 1912–1945 · full record</div>
+  <h1>Postings of the <em>Republic</em></h1>
+  <p>Appointments (任) and removals (免) of Republican China's officials, 1912–1945, drawn from the government gazettes — the Beiyang years, the Nanjing decade, and the war. The full deduplicated record, read in aggregate: rhythms, provinces, posts, and careers. No individual records are shown.</p>
+  <div class="st"><b>262,250</b> actions · <b>119,092</b> officials · <b>34</b> years · <b>3</b> eras</div>
+  <div class="btns"><button class="go" id="enter">⛶ &nbsp;Open the explorer</button>
+   <a class="nt" id="newtab" target="_blank" rel="noopener">open in a new tab ↗</a></div>
+ </div>
+</div>
+</div>
+
+<div id="app" style="display:none">
+<nav id="nav">
+ <a class="brand" href="#top">民國 <b>·</b> Postings of the Republic</a>
+ <div class="lnks"><a href="#pulsesec">Pulse</a><a href="#provsec">Provinces</a><a href="#postsec">Posts</a><a href="#erasec">Eras</a><a href="#careersec">Careers</a></div>
+</nav>
+
+<header class="hero" id="top"><div class="wrap">
+ <div class="grid2">
+  <div>
+   <div class="mono">政府公報 · 人事任免 · 民國元年 – 三十四年</div>
+   <h1 class="serif">The Republic,<br>one <em>appointment</em> at a time</h1>
+   <p class="sub">Every regime announces itself in its gazette. From the Provisional Government of 1912 through the Beiyang years, the Nanjing decade, and the wartime state — appointments, commissions, and removals of Republican China's officials, read in aggregate from the full deduplicated record.</p>
+   <div class="counts" id="counts"></div>
+   <span class="badge10">aggregates only · results provisional — data improvement underway</span><br>
+   <a class="scrolldn" href="#pulsesec">Explore the record ↓</a>
+  </div>
+  <div class="ornament">
+   <div class="vtext">政府公報<br><small>任免 銓敘 官制</small></div>
+   <div class="seal">任免之譜</div>
+  </div>
+ </div>
+</div></header>
+
+<section id="pulsesec"><div class="wrap rv">
+ <div class="shead"><span class="no">§ 01</span><span class="mono">the pulse · 脈搏</span></div>
+ <h2 class="serif">The Pulse of Appointment</h2>
+ <p class="lead">Personnel actions per year — appointments (任) in jade, removals (免) in bronze, stacked. Hover a year for the breakdown. The gazette machinery hums through the Beiyang years, crests in the Nanjing decade, and thins sharply after 1937, even as the <em>share</em> of removals climbs.</p>
+ <div class="panelbox">
+   <div id="eralabels"></div>
+   <div id="pulse"></div>
+   <div class="axis" id="axis"></div>
+   <div id="readout"></div>
+   <div class="pnote">
+     <span><i style="background:linear-gradient(180deg,#5fbd97,#2e7d5f)"></i>任 appointments</span>
+     <span><i style="background:linear-gradient(180deg,#d9ad72,#9a713a)"></i>免 removals</span>
+     <span style="margin-left:auto">full-record counts · gazette coverage varies by era</span>
+   </div>
+ </div>
+</div></section>
+
+<section id="provsec"><div class="wrap rv">
+ <div class="shead"><span class="no">§ 02</span><span class="mono">the provinces · 省域</span></div>
+ <h2 class="serif">Where the Posts Were</h2>
+ <p class="lead">Actions whose post names a province (jade) or special municipality (bronze), using the project's harmonization of Republican-era units (直隸→河北, 奉天→遼寧, …). <em>Covers the 21% of actions carrying a place name</em> — central and military posts mostly do not. Second figure: distinct officials.</p>
+ <div class="bars" id="provbars"></div>
+</div></section>
+
+<section id="postsec"><div class="wrap rv">
+ <div class="shead"><span class="no">§ 03</span><span class="mono">the posts · 職缺</span></div>
+ <h2 class="serif">What Was Being Filled</h2>
+ <p class="lead">Post titles classified by keyword. Half the gazette's personnel traffic is <em>military commissions</em> — the 授-rank announcements of a state at arms — followed by the clerical mass of section staff, and the county magistrates who governed the countryside.</p>
+ <div class="bars" id="postbars"></div>
+</div></section>
+
+<section id="erasec"><div class="wrap rv">
+ <div class="shead"><span class="no">§ 04</span><span class="mono">three regimes · 時代</span></div>
+ <h2 class="serif">Era Fingerprints</h2>
+ <p class="lead">The same machinery under three regimes. Volume per year, the removal share, and how officials <em>left</em> — each era has its own signature: the Beiyang churn, Nanjing's bureaucratic consolidation, and the wartime state that removed at triple the rate it could appoint.</p>
+ <div class="fps" id="fps"></div>
+</div></section>
+
+<section id="careersec"><div class="wrap rv">
+ <div class="shead"><span class="no">§ 05</span><span class="mono">careers · 宦跡</span></div>
+ <h2 class="serif">Careers, in Aggregate</h2>
+ <p class="lead">Following officials across all their gazette appearances, 1912–1945. Most surface once and vanish; a persistent minority builds long paper trails — one official appears 85 times. No individual careers are shown, only their shapes.</p>
+ <div class="nov" id="churn"></div>
+</div></section>
+
+<footer><div class="wrap">
+ <b>Postings of the Republic — 任免之譜</b> · aggregate visualization of Republican-era government personnel actions (1912–1945), from the R.O.C. Government Officials Database (中華民國政府官職資料庫, NCCU Library) and the authors' calculations.<br><br>
+ Figures cover the full deduplicated record, 1912–1945: for this analysis, the authors applied rule-based deduplication methods based on name, date of appointment, and posting, and 16 era-mismatched rows were excluded as scrape noise. Results are subject to change as the data improvement is underway. Province extraction uses the project's harmonization map (leftmost match in the post string; ~21% of actions carry a place). Post-type and exit-reason classes are keyword-based approximations. Gazette survival and scrape completeness vary across eras — year-to-year levels partly reflect the record, not only the state.
+ <div class="note"><b>What this page does not contain.</b> No names, no individual records, no post strings, no dates finer than the year — only aggregate counts. The underlying database is part of ongoing joint research and is not published here. All figures are provisional and subject to change as the data improvement is underway.</div>
+</div></footer>
+</div>
+
+<script id="data" type="application/json">{"meta":{"universe_n":262250,"universe_p":119092,"sample_n":262250,"sample_p":119092,"pct_n":100.0,"pct_p":100.0,"prov_match":53676,"prov_rate":0.205,"ren":229847,"mian":32402,"other_sit":1,"rule":"full record (no sampling)","mode":"full","window":"1912-1945","excluded_noise":16},"years":[{"y":1912,"ren":4668,"mian":231,"other":0},{"y":1913,"ren":17975,"mian":885,"other":0},{"y":1914,"ren":16290,"mian":1009,"other":0},{"y":1915,"ren":6146,"mian":497,"other":0},{"y":1916,"ren":10271,"mian":616,"other":0},{"y":1917,"ren":7571,"mian":634,"other":0},{"y":1918,"ren":6606,"mian":503,"other":0},{"y":1919,"ren":4962,"mian":453,"other":0},{"y":1920,"ren":5970,"mian":832,"other":0},{"y":1921,"ren":6240,"mian":634,"other":0},{"y":1922,"ren":6539,"mian":1087,"other":0},{"y":1923,"ren":12273,"mian":818,"other":0},{"y":1924,"ren":9158,"mian":1009,"other":0},{"y":1925,"ren":5267,"mian":841,"other":0},{"y":1926,"ren":2393,"mian":490,"other":0},{"y":1927,"ren":7177,"mian":483,"other":0},{"y":1928,"ren":3300,"mian":531,"other":1},{"y":1929,"ren":3260,"mian":835,"other":0},{"y":1930,"ren":1912,"mian":932,"other":0},{"y":1931,"ren":3517,"mian":1305,"other":0},{"y":1932,"ren":4068,"mian":1668,"other":0},{"y":1933,"ren":2820,"mian":1435,"other":0},{"y":1934,"ren":2081,"mian":1329,"other":0},{"y":1935,"ren":18088,"mian":1384,"other":0},{"y":1936,"ren":34847,"mian":1485,"other":0},{"y":1937,"ren":2850,"mian":1285,"other":0},{"y":1938,"ren":1923,"mian":787,"other":0},{"y":1939,"ren":1770,"mian":809,"other":0},{"y":1940,"ren":1677,"mian":802,"other":0},{"y":1941,"ren":2343,"mian":877,"other":0},{"y":1942,"ren":3060,"mian":1157,"other":0},{"y":1943,"ren":4073,"mian":1375,"other":0},{"y":1944,"ren":3779,"mian":1441,"other":0},{"y":1945,"ren":4973,"mian":1943,"other":0}],"eras":[{"code":"beiyang","a":1912,"b":1927,"zh":"北洋政府","en":"Beiyang era","n":140528,"mian":11022,"nyr":8783.0,"exits":{"other":4653,"resign":3831,"dismiss":1971,"transfer":539,"death":28},"posts":{"military":65489,"other":32091,"midstaff":19404,"judicial":6253,"county":3599,"police":3102}},{"code":"nanjing","a":1928,"b":1937,"zh":"國民政府·南京十年","en":"Nanjing decade","n":88933,"mian":12189,"nyr":8893.3,"exits":{"transfer":5581,"resign":3160,"other":2230,"dismiss":1218},"posts":{"military":58697,"midstaff":12922,"other":6660,"county":2077,"head2":2029,"provgov":1812}},{"code":"war","a":1938,"b":1945,"zh":"抗戰時期","en":"Wartime","n":32789,"mian":9191,"nyr":4098.6,"exits":{"transfer":4565,"resign":2026,"dismiss":1529,"other":1069,"retire":2},"posts":{"midstaff":13253,"county":4584,"military":3101,"provgov":2657,"other":2642,"head2":2264}}],"provinces":[{"p":"浙江省","n":3709,"persons":1789,"sp":false},{"p":"河南省","n":3072,"persons":1573,"sp":false},{"p":"江蘇省","n":2912,"persons":1624,"sp":false},{"p":"四川省","n":2818,"persons":1509,"sp":false},{"p":"江西省","n":2773,"persons":1538,"sp":false},{"p":"湖北省","n":2771,"persons":1551,"sp":false},{"p":"湖南省","n":2732,"persons":1374,"sp":false},{"p":"河北省","n":2625,"persons":1560,"sp":false},{"p":"安徽省","n":2622,"persons":1367,"sp":false},{"p":"福建省","n":2409,"persons":1275,"sp":false},{"p":"山東省","n":2320,"persons":1291,"sp":false},{"p":"甘肅省","n":2077,"persons":1149,"sp":false},{"p":"陝西省","n":1973,"persons":1181,"sp":false},{"p":"廣東省","n":1909,"persons":1095,"sp":false},{"p":"貴州省","n":1724,"persons":899,"sp":false},{"p":"廣西省","n":1686,"persons":996,"sp":false},{"p":"山西省","n":1585,"persons":841,"sp":false},{"p":"吉林省","n":1491,"persons":954,"sp":false},{"p":"遼寧省","n":1351,"persons":818,"sp":false},{"p":"黑龍江省","n":1279,"persons":838,"sp":false},{"p":"察哈爾省","n":1210,"persons":792,"sp":false},{"p":"綏遠省","n":939,"persons":558,"sp":false},{"p":"雲南省","n":769,"persons":460,"sp":false},{"p":"青海省","n":626,"persons":283,"sp":false},{"p":"新疆省","n":605,"persons":326,"sp":false},{"p":"西康省","n":553,"persons":309,"sp":false},{"p":"上海特別市","n":535,"persons":333,"sp":true},{"p":"熱河省","n":500,"persons":330,"sp":false},{"p":"重慶特別市","n":399,"persons":239,"sp":true},{"p":"北平特別市","n":394,"persons":258,"sp":true},{"p":"南京特別市","n":335,"persons":188,"sp":true},{"p":"天津特別市","n":220,"persons":154,"sp":true},{"p":"漢口特別市","n":211,"persons":127,"sp":true},{"p":"廣州特別市","n":147,"persons":128,"sp":true},{"p":"寧夏省","n":143,"persons":112,"sp":false},{"p":"青島特別市","n":124,"persons":78,"sp":true},{"p":"西安特別市","n":88,"persons":53,"sp":true},{"p":"臺灣省","n":20,"persons":17,"sp":false},{"p":"哈爾濱特別市","n":16,"persons":14,"sp":true},{"p":"瀋陽特別市","n":3,"persons":3,"sp":true},{"p":"大連特別市","n":1,"persons":1,"sp":true}],"posts":[{"c":"military","zh":"軍職","en":"military","n":127287},{"c":"midstaff","zh":"科員幕僚","en":"section staff & secretaries","n":45579},{"c":"other","zh":"其他","en":"other/unparsed","n":41393},{"c":"county","zh":"縣長·知事","en":"county magistrates","n":10260},{"c":"judicial","zh":"司法官","en":"judges & procurators","n":8208},{"c":"head2","zh":"廳局處長","en":"bureau & department heads","n":7140},{"c":"provgov","zh":"省道長官","en":"provincial & circuit chiefs","n":5730},{"c":"minister","zh":"部院長次","en":"ministers & vice-ministers","n":4713},{"c":"police","zh":"警政","en":"police","n":3546},{"c":"diplomat","zh":"外交官","en":"diplomats","n":2915},{"c":"fiscal","zh":"財稅關務","en":"customs & revenue","n":2884},{"c":"educ","zh":"教育","en":"education","n":2595}],"postLabels":{"county":["縣長·知事","county magistrates"],"minister":["部院長次","ministers & vice-ministers"],"judicial":["司法官","judges & procurators"],"diplomat":["外交官","diplomats"],"fiscal":["財稅關務","customs & revenue"],"military":["軍職","military"],"police":["警政","police"],"educ":["教育","education"],"head2":["廳局處長","bureau & department heads"],"provgov":["省道長官","provincial & circuit chiefs"],"midstaff":["科員幕僚","section staff & secretaries"],"other":["其他","other/unparsed"]},"exitLabels":{"resign":["辭職","resignation"],"retire":["退休","retirement"],"transfer":["另有任用","transferred"],"dismiss":["免職·懲處","dismissal/discipline"],"death":["病故","death/illness"],"other":["其他","other/unstated"]},"churn":{"one":75379,"two4":31644,"five":12069,"everMian":21909,"medSpan":5,"multi":43713,"maxActions":85}}</script>
+<script>
+const DATA = JSON.parse(document.getElementById('data').textContent);
+const $ = s => document.querySelector(s);
+const fmt = n => n.toLocaleString('en-US');
+const cover = $('#cover'), app = $('#app');
+let inited = false;
+function enter(){ cover.style.display='none'; app.style.display='block'; init(); }
+$('#cvcard').addEventListener('click', enter);
+const nt = $('#newtab'); nt.href = location.href;
+nt.addEventListener('click', e => e.stopPropagation());
+window.addEventListener('scroll', () => $('#nav').classList.toggle('show', scrollY > 300));
+
+function init(){
+  if (inited) return; inited = true;
+  buildCounts(); buildPulse(); buildProv(); buildPosts(); buildEras(); buildChurn();
+  if ('IntersectionObserver' in window){
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);
+        e.target.querySelectorAll('.tk>i,.k>i').forEach(i => { i.style.width = i.dataset.w; }); }
+    }), {threshold:.12});
+    document.querySelectorAll('.rv').forEach(el => io.observe(el));
+  } else document.querySelectorAll('.rv').forEach(el => { el.classList.add('in');
+    el.querySelectorAll('.tk>i,.k>i').forEach(i => { i.style.width = i.dataset.w; }); });
+}
+
+function buildCounts(){
+  const m = DATA.meta;
+  const items = [[m.sample_n,'personnel actions'],[m.sample_p,'distinct officials'],
+                 [m.ren,'任 appointments'],[m.mian,'免 removals'],[34,'years, 1912–45']];
+  $('#counts').innerHTML = items.map(([v,l]) =>
+    `<div class="c"><b data-v="${v}">0</b><span>${l}</span></div>`).join('');
+  document.querySelectorAll('#counts b').forEach(b => {
+    const v = +b.dataset.v, t0 = performance.now(), dur = 1100;
+    (function tick(t){ const p = Math.min(1,(t-t0)/dur);
+      b.textContent = fmt(Math.round(v*(1-Math.pow(1-p,3))));
+      if (p<1) requestAnimationFrame(tick); })(t0);
+  });
+}
+
+/* ---- pulse ---- */
+function buildPulse(){
+  const Y = DATA.years, mx = Math.max(...Y.map(y => y.ren + y.mian));
+  const pulse = $('#pulse'), rd = $('#readout');
+  const eraCls = y => y.y <= 1927 ? '' : (y.y <= 1937 ? 'e1' : 'e2');
+  const defaultRd = () => { rd.innerHTML =
+    `<span>1912–1945 totals</span><span class="rj">任 <b>${fmt(DATA.meta.ren)}</b></span>` +
+    `<span class="rb">免 <b>${fmt(DATA.meta.mian)}</b></span>` +
+    `<span>removal share <b>${(100*DATA.meta.mian/(DATA.meta.ren+DATA.meta.mian)).toFixed(1)}%</b></span>`; };
+  Y.forEach(y => {
+    const tot = y.ren + y.mian, h = 224*tot/mx, hm = 224*y.mian/mx;
+    const col = document.createElement('div');
+    col.className = 'pcol ' + eraCls(y);
+    col.innerHTML = `<div class="stk" style="height:${h.toFixed(0)}px">
+      <div class="ren" style="flex:1"></div><div class="mian" style="height:${hm.toFixed(0)}px"></div></div>`;
+    col.title = `${y.y} · 任 ${y.ren} · 免 ${y.mian}`;
+    col.addEventListener('mouseenter', () => { rd.innerHTML =
+      `<span><b>${y.y}</b> · 民國${y.y-1911}年</span><span class="rj">任 <b>${fmt(y.ren)}</b></span>` +
+      `<span class="rb">免 <b>${fmt(y.mian)}</b></span>` +
+      `<span>removal share <b>${tot? (100*y.mian/tot).toFixed(1) : '0.0'}%</b></span>`; });
+    col.addEventListener('mouseleave', defaultRd);
+    pulse.appendChild(col);
+  });
+  defaultRd();
+  const el = $('#eralabels');
+  DATA.eras.forEach(e => { const s = document.createElement('span');
+    s.style.flex = (e.b - e.a + 1); s.textContent = `${e.zh} ${e.a}–${e.b}`; el.appendChild(s); });
+  $('#axis').innerHTML = '<span>1912</span><span>1920</span><span>1930</span><span>1940</span><span>1945</span>';
+}
+
+/* ---- provinces ---- */
+function buildProv(){
+  const host = $('#provbars'), mx = DATA.provinces[0].n;
+  DATA.provinces.forEach(d => {
+    const row = document.createElement('div');
+    row.className = 'bar' + (d.sp ? ' sp' : '');
+    row.innerHTML = `<div class="lb">${d.p}<small>${d.sp?'special municipality':'province'}</small></div>
+      <div class="tk"><i data-w="${(100*d.n/mx).toFixed(1)}%"></i></div>
+      <div class="vv">${fmt(d.n)} · ${fmt(d.persons)} officials</div>`;
+    host.appendChild(row);
+  });
+}
+
+/* ---- posts ---- */
+function buildPosts(){
+  const host = $('#postbars'), mx = DATA.posts[0].n, tot = DATA.meta.sample_n;
+  DATA.posts.forEach(d => {
+    const row = document.createElement('div');
+    row.className = 'bar';
+    row.innerHTML = `<div class="lb">${d.zh}<small>${d.en}</small></div>
+      <div class="tk"><i data-w="${(100*d.n/mx).toFixed(1)}%"></i></div>
+      <div class="vv">${fmt(d.n)} · ${(100*d.n/tot).toFixed(1)}%</div>`;
+    host.appendChild(row);
+  });
+}
+
+/* ---- eras ---- */
+function buildEras(){
+  const host = $('#fps'), zhBig = {beiyang:'洋', nanjing:'京', war:'戰'};
+  DATA.eras.forEach(e => {
+    const exits = Object.entries(e.exits).sort((a,b)=>b[1]-a[1]).slice(0,4);
+    const exTot = Object.values(e.exits).reduce((a,b)=>a+b,0) || 1;
+    const fp = document.createElement('div'); fp.className = 'fp';
+    fp.innerHTML = `<span class="bigzh">${zhBig[e.code]||''}</span>
+      <h3>${e.zh}</h3><div class="yrs">${e.a} – ${e.b} · ${e.en}</div>
+      <div class="fn">${fmt(e.n)} actions in sample · ${e.nyr}/yr · removal share ${(100*e.mian/e.n).toFixed(1)}%</div>
+      <div class="row j"><span class="t">任 appointments</span><div class="k"><i data-w="${(100*(e.n-e.mian)/e.n).toFixed(1)}%"></i></div><span class="p">${(100*(e.n-e.mian)/e.n).toFixed(0)}%</span></div>
+      <div class="row"><span class="t">免 removals</span><div class="k"><i data-w="${(100*e.mian/e.n).toFixed(1)}%"></i></div><span class="p">${(100*e.mian/e.n).toFixed(0)}%</span></div>
+      <div class="fn" style="margin:12px 0 4px">how removals were framed:</div>` +
+      exits.map(([c,n]) => { const l = DATA.exitLabels[c] || [c,c];
+        return `<div class="row"><span class="t">${l[0]}</span><div class="k"><i data-w="${(100*n/exTot).toFixed(1)}%"></i></div><span class="p">${(100*n/exTot).toFixed(0)}%</span></div>`; }).join('');
+    host.appendChild(fp);
+  });
+}
+
+/* ---- churn ---- */
+function buildChurn(){
+  const c = DATA.churn, P = DATA.meta.sample_p;
+  const blocks = [
+    [c.one, 'appear exactly once', '泡', `${(100*c.one/P).toFixed(0)}% of officials on record surface in the gazette a single time between 1912 and 1945 — the vast, shallow edge of the Republican state.`],
+    [c.two4, 'appear 2–4 times', '宦', 'The working bureaucracy: officials whose careers left a short paper trail of postings and transfers.'],
+    [c.five, 'appear 5+ times', '棟', `A durable core of long careers — the record-holder appears ${c.maxActions} times. Median span from first to last action, among multi-record officials: ${c.medSpan} years.`],
+    [c.everMian, 'were ever removed (免)', '黜', `${(100*c.everMian/P).toFixed(0)}% of officials have at least one removal on record — the rest exit the gazette silently.`]];
+  $('#churn').innerHTML = blocks.map(([v,l,zh,p]) =>
+    `<div class="nv"><span class="bigzh">${zh}</span><div class="t">${l}</div><b>${fmt(v)}</b><p>${p}</p></div>`).join('');
+}
+</script>
+</body></html>
