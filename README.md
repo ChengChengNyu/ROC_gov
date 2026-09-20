@@ -5,7 +5,7 @@ An aggregate, interactive visualization of government personnel actions in Repub
 the Provisional Government through the Beiyang years, the Nanjing decade, and the wartime
 state.
 
-**Live page:** `https://chengchengnyu.github.io/<repo>/` *(edit after enabling Pages)*
+**Live page:** https://chengchengnyu.github.io/ROC_gov/
 
 ## What's in the explorer
 
