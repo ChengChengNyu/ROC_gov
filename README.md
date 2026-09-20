@@ -42,4 +42,4 @@ Open it locally or serve it from any static host (e.g. GitHub Pages).
 ## Attribution
 
 Part of an ongoing joint research project on the Republican-era bureaucracy by Cheng Cheng
-(NYU) and Qixuan *[surname — fill in]*. Comments and corrections welcome.
+(NYU) and Qixuan Yang. Comments and corrections welcome.
